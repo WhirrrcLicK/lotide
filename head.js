@@ -1,11 +1,9 @@
 const assertEqual = function(actual, expected) {
-  let result = "";
-  if (actual !== expected) {
-    result = console.log(`💔 Assertion Failed: ${actual} !== ${expected}`);
-  } else if (actual === expected) {
-    result = console.log(`🖤 Assertion Passed: ${actual} === ${expected}`);
+  if (actual === expected) {
+  console.log(`🖤 Assertion Passed: ${actual} === ${expected}`);
+  } else {
+  console.log(`💔 Assertion Failed: ${actual} !== ${expected}`);
   }
-  return result;
 };
 
   const head = function(arr1) {
