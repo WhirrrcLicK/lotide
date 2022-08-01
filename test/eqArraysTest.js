@@ -10,8 +10,8 @@ const eqArrays = require('../eqArrays');
 const assertEqual = require('../assertEqual')
 
 describe("#eqArrays", () => {
-  it("returns true", () => {assert.strictEqual(assertEqual(eqArrays([1, 2, 6], [1, 5, 3]), true));
+  it("returns true", () => {assert.deepEqual(assertEqual(eqArrays([1, 2, 6], [1, 5, 3]), true));
   })
-  it("returns false", () => {assert.strictEqual(assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3, 4]), true))
+  it("returns false", () => {assert.deepEqual(assertEqual(eqArrays([1, 2, 3, 4], [1, 2, 3, 4]), true))
   })
 });

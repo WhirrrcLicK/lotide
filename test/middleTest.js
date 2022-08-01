@@ -15,10 +15,10 @@ const middle = require('../middle');
 const assertArraysEqual = require('../assertArraysEqual');
 
 describe("#middle", () => {
-  it("returns true", () => {assert.strictEqual(assertArraysEqual(middle([1, 2]), []))}
+  it("returns true", () => {assert.deepEqual(assertArraysEqual(middle([1, 2]), []))}
   )
-  it("returns false", () => {assert.strictEqual(assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]))
+  it("returns false", () => {assert.deepEqual(assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]))
   })
-  it("returns false", () => {assert.strictEqual(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
+  it("returns false", () => {assert.deepEqual(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
   )})
 }); 
