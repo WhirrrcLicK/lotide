@@ -34,6 +34,3 @@ const countLetters = function(sentence) {
   }
   console.log(finalSentence)
 }
-
-
- countLetters("lighthouse in the house")
