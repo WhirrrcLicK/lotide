@@ -6,5 +6,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("flood", "flood");
-assertEqual(1, 6);
+module.exports = assertEqual;
